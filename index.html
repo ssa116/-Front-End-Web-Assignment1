@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WD2 - Assignment 1</title>
   <link href="https://fonts.google.com/share?selection.family=Roboto%20Slab:wght@100;200;300;400;500;600;700;800;900%7CRoboto:wght@300" rel="stylesheet">
+  <!-- <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'> -->
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -18,34 +19,76 @@
         <form action="#" method="post">
             <fieldset>
                 <legend><div class = "number-cicular">1</div>Account info</legend>
-                <label for="username">Username</label>
+                <label for="username" class="visually-hidden">Username</label>
                 <input type="text" 
                 name="username" 
                 id="username" 
+                placeholder="Full name..." 
                 required
                 pattern="[a-zA-Z0-9]+"
                 title="Username can only contain alpha-numeric characters"
                 aria-label="Username containing only alpha-numeric characters"
                 >
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required>
+                <label for="email" class="visually-hidden">Email</label>
+                <input type="email" name="email" id="email"  placeholder="Email Address..." required>
+                <label for="password" class="visually-hidden">Password</label>
+                <input type="password" name="password" id="password" minlength="8" placeholder="Password... min 8 chars" required>
             
             </fieldset>
+
+
             <fieldset>
                 <legend><div class = "number-cicular">2</div>Dev Skills</legend>
-                <label class="standalone">Programming Languages</label>
-                <input type="checkbox" name="html" id="html" value="html">
-                <label for="html">HTML</label>
-                <input type="checkbox" name="css" id="css" value="css">
-                <label for="css">CSS</label>
-                <input type="checkbox" name="js" id="js" value="js">
-                <label for="js">JavaScript</label>
-                <input type="checkbox" name="php" id="php" value="php">
-                <label for="php">PHP</label>
+                <div class = "wrapper">
+                  <div class = "programming-languages">
+                    <label class="standalone">Programming Languages</label>
+                  </div>
+                  <div class ="html">
+                    <input type="checkbox" name="html" id="html" value="html">
+                    <label for="html">HTML</label>
+                  </div>
+                  <div class = "css">
+                    <input type="checkbox" name="css" id="css" value="css">
+                    <label for="css">CSS</label>
+                  </div>
+                  <div class = "js">
+                    <input type="checkbox" name="js" id="js" value="js">
+                    <label for="js">JavaScript</label>
+                  </div>
+                  <div class = "sass">
+                  <input type="checkbox" name="sass" id="sass" value="sass">
+                  <label for="sass">Sass</label>
+                </div>
+                <div class = "php">
+                  <input type="checkbox" name="php" id="php" value="php">
+                  <label for="php">PHP</label>
+                </div>
+                <div class="python">
+                  <input type="checkbox" name="python" id="python" value="python">
+                  <label for="python">Python</label>
+                </div>
+                <div class = "dev-ops">
+                  <label class="standalone">Dev Ops</label>
+                </div>
+                <div class = "git">
+                  <input type="checkbox" name="GIT" id="git" value="git">
+                  <label for="git">GIT</label>
+                </div>
+                <div class = "gulp">
+                  <input type="checkbox" name="gulp" id="gulp" value="gulp">
+                  <label for="gulp">Gulp</label>
+                </div>
+                <div class="webpack">
+                  <input type="checkbox" name="webpack" id="webpack" value="webpack">
+                  <label for="webpack">Webpack</label>
+                </div>
+                </div>
+              </fieldset>
 
-                <label class="standalone">Overall Experience</label>
+              <fieldset>
+
+                <legend><div class = "number-cicular">3</div>Experience</legend>
+                <label class="standalone" class="visually-hidden"> Experience</label>
                 <input type="radio" name="experience" id="beginner" value="beginner">
                 <label for="beginner">Beginner</label>
                 <input type="radio" name="experience" id="intermediate" value="intermediate">
@@ -53,8 +96,9 @@
                 <input type="radio" name="experience" id="advanced" value="advanced">
                 <label for="advanced">Advanced</label>
               </fieldset>
+
               <fieldset>
-                <legend><div class = "number-cicular">3</div>Other</legend>
+                <legend><div class = "number-cicular">4</div>Other</legend>
                 <label for="referredby">How did you hear about us?</label>
                 <select name="referredby" id="referredby">
                   <option value="">Please Select...</option>

@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 
 /* Box Sizing Reset */
@@ -8,6 +7,8 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+
 
 
 * {
@@ -57,6 +58,14 @@ select{
   background-color: lightgray
 
 }
+
+
+select:focus {
+  border: 3px solid rgb(227, 224, 34);
+  outline: 0;
+}
+
+
 textarea{
   width:100%;
   height: 100px;
@@ -135,7 +144,8 @@ textarea{
 
 .form input:focus, .form textarea:focus {
   background: white;
-  border: 3px solid rgb(227, 224, 34);;
+  border: 3px solid rgb(227, 224, 34);
+  outline: 0;
 }
 
 .form input::placeholder {
@@ -180,6 +190,18 @@ footer {
   padding-right: 1em;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
 input[type='checkbox'], input[type='radio'] {
   display: inline-block;
   width: fit-content;
@@ -196,3 +218,22 @@ input[type='checkbox'] + label, input[type='radio'] + label {
 {
   display: none;
 }
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  grid-auto-rows: 25px;
+}
+.programming-languages {
+  grid-column: 1/4;
+  grid-row: 1;
+
+}
+.dev-ops {
+  grid-column: 1/4;
+  grid-row: 4;
+}
+
+
