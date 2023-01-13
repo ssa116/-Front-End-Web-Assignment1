@@ -14,13 +14,13 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 body {
   min-height: 125vh;
   min-width: 400px;
-  background: linear-gradient(to bottom, rgb(83,203,241) 0%,rgb(209,242,252) 100%);
+  background: linear-gradient(to bottom, rgb(227, 224, 34) 0%,rgb(233, 115, 25) 100%);
 
 }
 
@@ -45,7 +45,7 @@ main .color-blob {
   width: 34px;
   height: 34px;
   padding: 8px;
-  background: green;
+  background: darkblue;
   color: white;
   text-align: center;
   margin-right: 10px;
@@ -81,7 +81,7 @@ textarea{
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .form {
@@ -93,11 +93,12 @@ textarea{
 
 .form h2 {
   position: relative;
-  color: black;
+  color: darkblue;
   font-size: 2em;
   font-weight: 600;
   text-shadow: 1px 2px 4px #888;
   margin-bottom: 1em;
+  font-weight: bold;
 }
 
 .form h2::before {
@@ -107,7 +108,7 @@ textarea{
   bottom: -7px;
   width: 3em;
   height: 0.1em;
-  background: black;
+  background: darkblue;
   box-shadow: 1px 2px 4px #CCC;
 }
 
@@ -127,14 +128,14 @@ textarea{
 }
 .form input[type="reset"] {
   background: white;
-  color: black;
+  color: darkorange;
   border: solid rgba(54, 54, 52, 0.6);
   border-width: thin;
 }
 
 .form input:focus, .form textarea:focus {
   background: white;
-  border: 1px solid green;
+  border: 3px solid rgb(227, 224, 34);;
 }
 
 .form input::placeholder {
@@ -144,8 +145,8 @@ textarea{
 }
 
 .form input[type="submit"] {
-  background: green;
-  color: black;
+  background: darkblue;
+  color: white;
   max-width: 100%;
   cursor: pointer;
   font-weight: 600;
